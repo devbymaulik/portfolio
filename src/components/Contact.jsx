@@ -27,9 +27,10 @@ function Contact() {
       className="max-w-screen-xl mx-auto px-4 md:px-20 py-20"
     >
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-800 dark:text-white">
-          Let’s Connect
+        <h2 className="text-4xl font-bold text-gray-800">
+          Let’s <span className="text-green-600">Connect</span>
         </h2>
+
         <p className="text-gray-600 dark:text-gray-300 mt-3 text-lg">
           Whether you have a project idea, job opportunity, or just want to say
           hello — I'm always open!

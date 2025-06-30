@@ -66,47 +66,52 @@ function Experience() {
   ];
 
   return (
-    <div
+    <section
       name="Experience"
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-20"
+      className="w-full bg-gradient-to-br from-gray-100 to-white py-20"
     >
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-gray-800">
-          {" "}
-          My Experience
-        </h2>
-        <p className="text-gray-500 mt-2 text-lg">
-          Over <strong>7+ years</strong> working with diverse technologies
-        </p>
-      </div>
+      <div className="max-w-screen-2xl mx-auto px-4 md:px-20">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-800">
+            My <span className="text-green-600">Experience</span>
+          </h2>
+          <p className="text-gray-500 text-lg">
+            Over <strong>7+ years</strong> of experience working with web
+            technologies
+          </p>
+        </div>
 
-      <div className="space-y-10">
-        {skills.map((group, index) => (
-          <div key={index}>
-            <h2 className="text-2xl font-semibold mb-4 text-gray-700 border-l-4 border-blue-500 pl-3">
-              {group.category}
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-              {group.items.map(({ id, logo, name }) => (
-                <div
-                  key={id}
-                  className="bg-white bg-opacity-30 backdrop-blur-md border border-gray-200 rounded-xl shadow-lg p-5 flex flex-col items-center justify-center hover:scale-105 transition duration-300"
-                >
-                  <img
-                    src={logo}
-                    alt={name}
-                    className="w-16 h-16 object-contain mb-3"
-                  />
-                  <p className="text-gray-800 font-medium text-center">
-                    {name}
-                  </p>
-                </div>
-              ))}
+        {/* Skills Grid */}
+        <div className="space-y-16">
+          {skills.map((group, index) => (
+            <div key={index}>
+              <h3 className="text-xl font-semibold mb-4 text-gray-700 border-l-4 border-blue-500 pl-4">
+                {group.category}
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                {group.items.map(({ id, logo, name }) => (
+                  <div
+                    key={id}
+                    className="bg-white/50 backdrop-blur-lg border border-gray-200 rounded-2xl shadow-md p-5 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                  >
+                    <img
+                      src={logo}
+                      alt={name}
+                      className="w-16 h-16 object-contain mb-3"
+                    />
+                    <p className="text-gray-800 font-medium text-center text-sm">
+                      {name}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
+
 export default Experience;

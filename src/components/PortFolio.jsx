@@ -240,8 +240,8 @@ export default function Portfolio() {
   return (
     <section name="Portfolio" className="max-w-screen-2xl mx-auto px-6 py-20">
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-bold text-gray-900 tracking-tight">
-          My Project Portfolio
+        <h2 className="text-4xl font-bold text-gray-800">
+          My Project <span className="text-green-600">Portfolio</span>
         </h2>
         <p className="text-gray-500 text-lg mt-3">
           Filter by category to explore apps and plugins built using React,
