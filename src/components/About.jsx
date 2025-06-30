@@ -8,7 +8,7 @@ function About() {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-extrabold text-gray-800">About Me</h2>
         <p className="text-gray-600 text-lg mt-2">
-          Who I am, what I do, and why I love it
+          Who I am, what I do, and why I love it (For Test)
         </p>
       </div>
 
