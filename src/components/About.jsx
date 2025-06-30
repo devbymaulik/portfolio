@@ -15,8 +15,8 @@ function About() {
       <div className="space-y-10 text-gray-700 text-base leading-relaxed">
         <section>
           <p>
-            Hi, I’m <strong className="text-green-600">Maulik Patel</strong> — a
-            dedicated and results-driven Web Developer with over
+            Hi, I am <strong className="text-green-600">Maulik Patel</strong> —
+            a dedicated and results-driven Web Developer with over
             <strong> 7 years of experience</strong> specializing in
             <strong> WordPress development</strong> and the
             <strong> MERN Stack</strong> (MongoDB, Express.js, React.js,
