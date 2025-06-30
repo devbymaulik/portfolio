@@ -8,15 +8,15 @@ function About() {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-extrabold text-gray-800">About Me</h2>
         <p className="text-gray-600 text-lg mt-2">
-          Who I am, what I do, and why I love it (For Test)
+          Who I am, what I do, and why I love it 123
         </p>
       </div>
 
       <div className="space-y-10 text-gray-700 text-base leading-relaxed">
         <section>
           <p>
-            Hi, I am <strong className="text-green-600">Maulik Patel</strong> —
-            a dedicated and results-driven Web Developer with over
+            Hi, I’m <strong className="text-green-600">Maulik Patel</strong> — a
+            dedicated and results-driven Web Developer with over
             <strong> 7 years of experience</strong> specializing in
             <strong> WordPress development</strong> and the
             <strong> MERN Stack</strong> (MongoDB, Express.js, React.js,
