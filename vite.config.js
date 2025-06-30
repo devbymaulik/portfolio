@@ -2,6 +2,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 export default defineConfig({
-  base: "/", // <- this MUST match your GitHub repo name
+  base: "/portfolio/", // <- For GitHub
+  //base: "/", // <- For netlify
   plugins: [react()],
 });
