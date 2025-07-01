@@ -6,46 +6,57 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import reactLogo from "../../public/reactjs.png";
-
 const wordpressBase = "/wordpress/";
+const wordpressClienBase = "/wordpress_client/";
 const reactBase = "/react/";
+const mern_stack = "/mern_stack/";
 const node = "/node/";
-
-/* const projects = [
-  {
-    id: 1,
-    category: "MERN",
-    name: "Real-time Chat App",
-    images: [reactLogo, reactLogo, reactLogo],
-    description:
-      "A real-time chat app with JWT auth, socket.io, typing indicators, and online presence. Built with MERN stack.",
-    videoLink: "#",
-    tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.IO"],
-  },
-  // ... (other projects remain unchanged)
-]; */
-
 // Project List
 const projects = [
   {
     id: 1,
     category: "MERN",
     name: "Real-time Chat App",
-    images: [reactLogo, reactLogo, reactLogo],
+    images: [
+      mern_stack + "chatapp-logo.png",
+      mern_stack + "chatapp-home.png",
+      mern_stack + "chatapp_signup.png",
+      mern_stack + "chatapp-dashboard.png",
+      mern_stack + "chatapp-update-profile.png",
+      mern_stack + "chatapp-typing-online.png",
+    ],
     description:
-      "A real-time chat app with user authentication, JWT access tokens, socket.io for live messaging, typing indicators, and online status indicators. Built with MERN stack.",
-    videoLink: "#",
+      "A real-time chat app with user authentication, JWT access tokens, socket.io for live messaging, typing indicators, sound notification and online status indicators. Built with MERN stack.",
+    videoLink: "https://realtime-chat-app-ma9c.onrender.com/",
     tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.IO"],
   },
   {
     id: 2,
     category: "React",
     name: "Portfolio Website",
-    images: [reactLogo, reactLogo],
+    images: [reactBase + "portfolio-home.png", reactBase + "portfolio.png"],
     description:
       "A sleek personal portfolio website made with React and Tailwind CSS, featuring animations, smooth scrolling, and filtering options.",
-    videoLink: "#",
+    videoLink: "https://devmaulik.netlify.app/",
     tech: ["React.js", "Tailwind CSS", "Framer Motion"],
+  },
+  {
+    id: 15,
+    category: "WordPress",
+    name: "NiftyHMS",
+    images: [
+      wordpressClienBase + "hms-logo.png",
+      wordpressClienBase + "hms_home.png",
+      wordpressClienBase + "hms_dashboard_2.png",
+      wordpressClienBase + "hms_patient_details.png",
+      wordpressClienBase + "hms-appointment-booking.png",
+      wordpressClienBase + "hms-chatboat.png",
+      wordpressClienBase + "hms-whatsapp-chat.png",
+    ],
+    description:
+      "Cloud-based WordPress Hospital Management System (HMS) plugin with dedicated access roles for Admin, Doctor, Nurse, and Patient. It supports appointment bookings, patient records, billing, and real-time WhatsApp chatbot integration for patient interaction.",
+    videoLink: "https://apps.niftyhms.com/general/",
+    tech: ["WordPress", "PHP", "MySQL", "Bootstrap", "WhatsApp Chatbot"],
   },
   {
     id: 3,
@@ -225,13 +236,10 @@ const projects = [
     tech: ["Node"],
   },
 ];
-
 const filters = ["All", "MERN", "React", "WordPress", "Node"];
-
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
-
   const filteredProjects =
     activeFilter === "All"
       ? projects
