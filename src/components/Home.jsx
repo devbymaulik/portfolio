@@ -88,7 +88,7 @@ function Home() {
                     <FaSquareFacebook />
                   </a>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/in/maulik-patel-189480138/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-2xl text-gray-600 hover:text-blue-700 transition"
