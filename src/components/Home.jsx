@@ -53,7 +53,7 @@ function Home() {
 
             <div className="mt-6 flex flex-wrap gap-4">
               <a
-                href="/Maulik_Patel_Resume.pdf"
+                href="maulik_patel.pdf"
                 download
                 className="bg-red-600 hover:bg-red-700 text-white font-medium px-6 py-3 rounded shadow-md transition duration-300"
               >
